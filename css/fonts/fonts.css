@@ -1,0 +1,9 @@
+@font-face {
+    font-family: PacMan;
+    src: url(PAC-FONT.ttf);
+}
+
+@font-face {
+    font-family: ScoreFont;
+    src: url(PressStart2P.ttf);
+}

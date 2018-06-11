@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Pac-Man</title>
+        <link rel="icon" href="imgs/icon/pac-man.png" />
+
+        <!-- CSS -->
+        <link href="css/style.css" rel="stylesheet" type="text/css"></link>
+        <link href="css/fonts/fonts.css" rel="stylesheet" type="text/css"></link>
+
+        <!-- Pathfinding.js -->
+        <script type="text/javascript" src="bower_components/pathfinding/pathfinding-browser.min.js"></script>
+
+        <script src="scripts/main.js"></script>
+        <script src="scripts/board.js"></script>
+        <script src="scripts/input.js"></script>
+
+        <!-- Pacman -->
+        <script src="scripts/pacman/pacmanClass.js"></script>
+        <script src="scripts/pacman/pacman.js"></script>
+
+        <!--  Ghosts -->
+        <script src="scripts/ghosts/ghostClass.js"></script>
+
+        <!-- Blinky -->
+        <script src="scripts/ghosts/blinky.js"></script>
+
+        <!-- Pinky -->
+        <script src="scripts/ghosts/pinky.js"></script>
+
+        <!-- Inky -->
+        <script src="scripts/ghosts/inky.js"></script>
+
+        <!-- Clyde -->
+        <script src="scripts/ghosts/clyde.js"></script>
+
+        <!--  Scatter Mode -->
+        <script src="scripts/scatterMode/scatterMode.js"></script>
+
+        <!-- Animation -->
+        <script src="scripts/animation/pinkyAnimationStart.js"></script>
+        <script src="scripts/animation/inkyAnimationStart.js"></script>
+        <script src="scripts/animation/clydeAnimationStart.js"></script>
+        <script src="scripts/animation/deathAnimation.js"></script>
+
+        <!-- Draw Pacman -->
+        <script src="scripts/draw/drawPacman.js"></script>
+
+        <!-- Draw Ghosts -->
+        <script src="scripts/draw/drawGhosts/drawBlinky.js"></script>
+        <script src="scripts/draw/drawGhosts/drawPinky.js"></script>
+        <script src="scripts/draw/drawGhosts/drawInky.js"></script>
+        <script src="scripts/draw/drawGhosts/drawClyde.js"></script>
+
+        <!-- Other Drawing -->
+        <script src="scripts/draw/drawWalls.js"></script>
+        <script src="scripts/draw/drawPickups.js"></script>
+        <script src="scripts/draw/draw.js"></script>
+
+        <!-- Other -->
+        <script src="sounds/sounds.js"></script>
+        <script src="scripts/pickups/pickups.js"></script>
+        <script src="scripts/checks/checkWin.js"></script>
+        <script src="scripts/gameOver/gameWon.js"></script>
+        <script src="scripts/gameOver/gameLost.js"></script>
+        <script src="scripts/ghosts/ghostReset/ghostEaten.js"></script>
+        <script src="scripts/pickups/powerPellets.js"></script>
+
+    </head>
+    <body onload="onLoad()">
+
+        <div id="title">
+            <img src="imgs/pacman-logo.jpg" alt="Pac-Man" width="90%" height="90%">
+        </div>
+
+        <div id="mainScreen">
+            <canvas id="mainCanvas" height="540" width="1080"></canvas>
+        </div>
+
+        <div id="mainButton">
+            <button id="startButton" onclick="onStart()">Start</button>
+        </div>
+
+        <div id="score">
+            <h1 id="scoreLabel">Score: 00</h1>
+        </div>
+
+        <div id="winScreen">
+            <h1>You Win!!</h1>
+            <p id="yourWinScore">Your Score: </p>
+        </div>
+
+        <div id="loseScreen">
+            <h1>You Lose!!</h1>
+            <p id="yourLoseScore">Your Score: </p>
+        </div>
+
+        <div id="ready">
+            <h1 id="readyLabel">Ready !!</h1>
+        </div>
+
+        <p id="spacer">Blank</p>
+
+    </body>
+</html>
