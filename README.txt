@@ -52,11 +52,3 @@ Pac-Man), in some situations his target is defaulted to Pac-Man's position.
 - Inky's target is not the same, I could have made it the same but it would have
 taken too long.
 - Clyde's target is similar as in the real game.
-
-
-If your reading this, sorry for such a long README, I've had no one to talk to
-about this since I started :D
-
-
-2324 Lines
-27 Files
